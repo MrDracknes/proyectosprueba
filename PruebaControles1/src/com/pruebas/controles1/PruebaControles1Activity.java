@@ -26,7 +26,6 @@ public class PruebaControles1Activity extends Activity {
         image = (ImageButton)findViewById(R.id.imageButton1);
         label = (TextView)findViewById(R.id.lblMensaje);
         boton.setOnClickListener(new View.OnClickListener() {			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				label.setText("Botón pulsado");
@@ -35,7 +34,6 @@ public class PruebaControles1Activity extends Activity {
         
         toggle.setOnClickListener(new View.OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				if (toggle.isChecked()){

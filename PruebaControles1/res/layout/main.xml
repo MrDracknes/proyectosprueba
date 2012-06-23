@@ -27,7 +27,7 @@
         android:id="@+id/imageButton1"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:src="@drawable/tic"
+        android:src="@drawable/ic_launcher"
         android:contentDescription="description">
     </ImageButton>   
 </LinearLayout>
