@@ -18,7 +18,7 @@ public class PruebaControles2Activity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        str.setSpan(new StyleSpan(android.graphics.Typeface.BOLD), 11,20,Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        str.setSpan(new StyleSpan(android.graphics.Typeface.BOLD), 11, 20, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         texto = (EditText)findViewById(R.id.etTexto);
         texto.setText(str);
     }
