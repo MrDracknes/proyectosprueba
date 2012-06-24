@@ -5,8 +5,32 @@
     android:orientation="vertical" >
 
     <TextView
+        android:id="@+id/LblMensaje"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/hello" />
+    
+    <CheckBox android:id="@+id/ChkMarcame"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Márcame!" />
+    
+    <RadioGroup 
+        android:id="@+id/rg1"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+        <RadioButton 
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="Opción 1"/>
+        <RadioButton 
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="Opción 2"/>
+    </RadioGroup>
+    
 
 </LinearLayout>
