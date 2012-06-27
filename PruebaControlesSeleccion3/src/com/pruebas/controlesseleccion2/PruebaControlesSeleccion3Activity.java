@@ -11,30 +11,19 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class PruebaControlesSeleccion2Activity extends Activity {
+public class PruebaControlesSeleccion3Activity extends Activity {
     /** Called when the activity is first created. */
 	
-	private Titular[] datos =
-		    new Titular[]{
-		        new Titular("T’tulo 1", "Subt’tulo largo 1"),
-		        new Titular("T’tulo 2", "Subt’tulo largo 2"),
-		        new Titular("T’tulo 3", "Subt’tulo largo 3"),
-		        new Titular("T’tulo 4", "Subt’tulo largo 4"),
-		        new Titular("T’tulo 5", "Subt’tulo largo 5"),
-		        new Titular("T’tulo 6", "Subt’tulo largo 6"),
-		        new Titular("T’tulo 7", "Subt’tulo largo 7"),
-		        new Titular("T’tulo 8", "Subt’tulo largo 8"),
-		        new Titular("T’tulo 9", "Subt’tulo largo 9"),
-		        new Titular("T’tulo 10", "Subt’tulo largo 10"),
-		        new Titular("T’tulo 11", "Subt’tulo largo 11"),
-		        new Titular("T’tulo 12", "Subt’tulo largo 12")};
+	private Titular[] datos = new Titular[25];
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
-        
+        for(int i = 0;i<25;i++){
+        	datos[i] = new Titular("T’tulo " + (i+1), "Subt’tulo largo " + (i+1));
+        }
         	 
         AdaptadorTitulares adaptador = new AdaptadorTitulares(this);
          
@@ -55,30 +44,39 @@ public class PruebaControlesSeleccion2Activity extends Activity {
 	
 	class AdaptadorTitulares extends ArrayAdapter {
 		 
-	    Activity context;
-	 
+		Activity context;
+ 
         AdaptadorTitulares(Activity context) {
             super(context, R.layout.listitem_titular, datos);
             this.context = context;
         }
-	 
-        public View getView(int position, View convertView, ViewGroup parent) {
-        		
-        	View item = convertView;
-        	
-        	if(item == null){
-    	        LayoutInflater inflater = context.getLayoutInflater();
-    	        item = inflater.inflate(R.layout.listitem_titular, null);
-        	}
-       
  
-	        TextView lblTitulo = (TextView)item.findViewById(R.id.LblTitulo);
-	        lblTitulo.setText(datos[position].getTitulo());
-	 
-	        TextView lblSubtitulo = (TextView)item.findViewById(R.id.LblSubTitulo);
-	        lblSubtitulo.setText(datos[position].getSubtitulo());
-	 
-	        return(item);
-	    }
+        public View getView(int position, View convertView, ViewGroup parent) {
+	        
+        	View item = convertView;
+        	ViewHolder holder;
+        	
+        	if(item==null){
+        		LayoutInflater inflater = context.getLayoutInflater();
+    	        item = inflater.inflate(R.layout.listitem_titular, null);
+    	        holder = new ViewHolder();
+    	        holder.titulo = (TextView)item.findViewById(R.id.LblTitulo);
+    	        holder.subtitulo = (TextView)item.findViewById(R.id.LblSubTitulo);
+    	        
+    	        item.setTag(holder);
+        	}else{
+        		holder = (ViewHolder)item.getTag();
+    		}
+			
+			holder.titulo.setText(datos[position].getTitulo());
+			holder.subtitulo.setText(datos[position].getSubtitulo());
+			
+			return(item);
+		}
+    }
+	
+	static class ViewHolder{
+		TextView titulo;
+		TextView subtitulo;
 	}
 }
