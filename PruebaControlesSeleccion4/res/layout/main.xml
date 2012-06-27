@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lbl1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+    
+    
+    <GridView android:id="@+id/GridOpciones"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:numColumns="auto_fit"
+	    android:columnWidth="80px"
+	    android:horizontalSpacing="5px"
+	    android:verticalSpacing="10px"
+	    android:stretchMode="columnWidth" />
+
+</LinearLayout>
