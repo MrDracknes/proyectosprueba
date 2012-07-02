@@ -32,7 +32,6 @@ public class PruebaControlesSeleccion3Activity extends Activity {
         lstOpciones.setAdapter(adaptador);
     	
     	lstOpciones.setOnItemClickListener(new OnItemClickListener() {
-    	    @Override
     	    public void onItemClick(AdapterView<?> a, View v, int position, long id) {
     	        //Acciones necesarias al hacer click
     	    }
