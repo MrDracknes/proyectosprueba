@@ -10,10 +10,6 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 
 	TextView lblMensaje;    
-
-    private static final String MNU_OPC1 = "MnuOpc1";
-    private static final String MNU_OPC2 = "MnuOpc2";
-    private static final String MNU_OPC3 = "MnuOpc3";
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -30,7 +26,7 @@ public class MainActivity extends Activity {
         inflater.inflate(R.menu.activity_main, menu);
         return true;  */	        
         //Alternativa 2
-        menu.add(Menu.NONE, 1, Menu.NONE, "Opcion1").setIcon(R.drawable.tag);
+    	menu.add(Menu.NONE, 1, Menu.NONE, "Opcion1").setIcon(R.drawable.tag);
         menu.add(Menu.NONE, 2, Menu.NONE, "Opcion2").setIcon(R.drawable.filter);
         //menu.add(Menu.NONE, 3, Menu.NONE, "Opcion3").setIcon(R.drawable.chart);
         SubMenu smnu = menu.addSubMenu(Menu.NONE, 3, Menu.NONE, "Opcion3").setIcon(R.drawable.chart);
