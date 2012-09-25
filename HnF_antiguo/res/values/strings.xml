@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">HnF Lector Online</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">HnF Lector Online</string>
+    <string name="splash">Splash</string>
+    <string name="titulo_instrucciones">Instrucciones</string>
+    <string name="en_la_imagen">En la imagen:</string>
+    <string name="doble_click">Doble Click: Amplia|Reduce</string>
+    <string name="volumen_up">Boton Volumen +: Siguiente página</string>
+    <string name="volumen_down">Boton Volumen -: Anterior página</string>
+    <string name="menu">Botón Menú: Muestra las opciones de capítulo anterior|siguiente</string>
+    <string name="imagen_ampliada">Deslizar: Esta opción solo funciona si la imagen NO está ampliada. De DERECHA
+        a IZQUIERDA va hacia la pagina anterior y de IZQUIERDA a DERECHA carga la página siguiente.</string>
+    <string name="disfruta">Disfruta :)</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
