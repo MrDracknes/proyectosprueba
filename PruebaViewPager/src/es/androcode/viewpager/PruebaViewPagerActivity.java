@@ -1,14 +1,15 @@
 package es.androcode.viewpager;
 
+import com.viewpagerindicator.TitlePageIndicator;
+
+import es.androcode.viewpager.prueba.R;
+
 import android.app.Activity;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-
-import com.viewpagerindicator.R;
-import com.viewpagerindicator.TitlePageIndicator;
 
 
 public class PruebaViewPagerActivity extends Activity {
