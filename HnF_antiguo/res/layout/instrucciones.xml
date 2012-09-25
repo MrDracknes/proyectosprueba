@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_intrucciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:height="60dip"
+            android:text="@string/titulo_instrucciones"
+            android:textColor="#0085f6"
+            android:textSize="30dip"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv_en_la_imagen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:height="70dip"
+            android:paddingLeft="15dip"
+            android:paddingTop="30dip"
+            android:text="@string/en_la_imagen"
+            android:textColor="#0085f6"
+            android:textSize="20dip"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv_doble_click"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dip"
+            android:paddingTop="10dip"
+            android:text="@string/doble_click"
+            android:textColor="#000"
+            android:textSize="20dip"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv_volumen_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dip"
+            android:paddingTop="5dip"
+            android:text="@string/volumen_up"
+            android:textColor="#000"
+            android:textSize="20dip"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv_volumen_down"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dip"
+            android:paddingTop="10dip"
+            android:text="@string/volumen_down"
+            android:textColor="#000"
+            android:textSize="20dip"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dip"
+            android:paddingTop="10dip"
+            android:text="@string/menu"
+            android:textColor="#000"
+            android:textSize="20dip"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv_imagen_ampliada"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dip"
+            android:paddingTop="10dip"
+            android:paddingBottom="40dip"
+            android:text="@string/imagen_ampliada"
+            android:textColor="#000"
+            android:textSize="20dip"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btn_disfruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"            
+            android:text="@string/disfruta"
+            android:textColor="#0085f6"
+            android:textSize="30dip"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+    </LinearLayout>
+
+</ScrollView>
