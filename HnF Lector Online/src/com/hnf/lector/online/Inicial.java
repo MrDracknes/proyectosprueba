@@ -1,12 +1,13 @@
 package com.hnf.lector.online;
 
 import android.app.ActionBar;
-import android.app.FragmentTransaction;
+import android.app.ActionBar.Tab;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -14,6 +15,8 @@ import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+
 
 public class Inicial extends FragmentActivity implements ActionBar.TabListener {
 
@@ -141,4 +144,19 @@ public class Inicial extends FragmentActivity implements ActionBar.TabListener {
             return textView;
         }
     }
+
+	public void onTabReselected(Tab arg0, android.app.FragmentTransaction arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onTabSelected(Tab arg0, android.app.FragmentTransaction arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onTabUnselected(Tab arg0, android.app.FragmentTransaction arg1) {
+		// TODO Auto-generated method stub
+		
+	}
 }
